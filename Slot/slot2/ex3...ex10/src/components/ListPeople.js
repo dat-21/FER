@@ -1,19 +1,21 @@
-import React from 'react'
+import React from "react";
 
-function ListPeople({ object }) {
-    
-    return (
-      <>
-    <div>
-          <ul>
-            {object.map((person, index) => (
-            <li key={index}> Name: {person.name1}, Age: {person.age}, Occupation: {person.occupation}  </li>
-            ))}
-          </ul>
-            </div>
-            
+function ListPeople({ object = [] }) {
+  return (
+    <>
+      <div>
+        <ul>
+          {object.map((person, index) => (
+            <li key={index}>
+              {" "}
+              Name: {person.name1}, Age: {person.age}, Occupation:{" "}
+              {person.occupation}{" "}
+            </li>
+          ))}
+        </ul>
+      </div>
 
-            <h2>List of People</h2>
+      <h2>List of People</h2>
       <table border="1" cellPadding="10" cellSpacing="0">
         <thead>
           <tr>
@@ -33,11 +35,9 @@ function ListPeople({ object }) {
             </tr>
           ))}
         </tbody>
-            </table>
-          
-      </>
-
-  )
+      </table>
+    </>
+  );
 }
 
-export default ListPeople
+export default ListPeople;
