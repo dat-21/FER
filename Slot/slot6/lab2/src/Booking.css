@@ -1,0 +1,50 @@
+/* Booking.css */
+
+/* General container for the form */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Heading style */
+h2.text-center {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Input and select fields */
+.form-control,
+.form-select {
+    padding: 0.75rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+/* Styling for the text area */
+#comment {
+    resize: none;
+}
+
+/* Button styling */
+button.btn-warning {
+    background-color: #ffc107;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    border: none;
+}
+
+button.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+/* Error message styling if needed */
+.text-danger {
+    color: #dc3545;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
