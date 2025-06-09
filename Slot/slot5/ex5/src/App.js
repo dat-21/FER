@@ -6,8 +6,8 @@ function App() {
     <div className="App">
       {/* <EX1 /> */}
 
-      <EX3 />
-      {/* <EX2 /> */}
+      {/* <EX3 /> */}
+      <EX2 />
     </div>
   );
 }

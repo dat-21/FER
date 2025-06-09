@@ -31,7 +31,7 @@ function Menu() {
               <p className="text-decoration-line-through">$40.00</p>
               <p className="text-warning">$24.00</p>
             </span>
-            <a href="/" className="btn bg-gray text-white w-100">
+            <a href="/" className="btn bg-primary text-white w-100">
               Buy
             </a>
           </div>
@@ -49,7 +49,7 @@ function Menu() {
             <span className="card-text">
               <p className="text-dark">$24.00</p>
             </span>
-            <a href="/" className="btn bg-gray text-white w-100">
+            <a href="/" className="btn bg-primary text-white w-100">
               Buy
             </a>
           </div>
@@ -64,7 +64,7 @@ function Menu() {
             <span className="card-text">
               <p className="text-dark">$25.00</p>
             </span>
-            <a href="/" className="btn bg-gray text-white w-100">
+            <a href="/" className="btn bg-primary text-white w-100">
               Buy
             </a>
           </div>
@@ -80,7 +80,7 @@ function Menu() {
               <p className="text-decoration-line-through">$40.00</p>
               <p className="text-warning">$30.00</p>
             </span>
-            <a href="/" className="btn bg-gray text-white w-100">
+            <a href="/" className="btn bg-primary text-white w-100">
               Buy
             </a>
           </div>

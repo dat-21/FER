@@ -1,3 +1,6 @@
+import React from "react";
+import "./Booking.css";
+
 function Header() {
   return (
     <div className="container-fluid bg-gray">
@@ -9,34 +12,40 @@ function Header() {
           <div className="menu">
             <ul className="nav fs-5">
               <li className="nav-item">
-                <a className="nav-link active " aria-current="page" href="/">
+                <a className="nav-link active" aria-current="page" href="/">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link " href="/">
+                <a className="nav-link" href="/">
                   About us
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link " href="/">
+                <a className="nav-link" href="/">
                   Contact
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div className="col-4">
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-danger" type="submit">
-              <i class="bi bi-search"></i>
-            </button>
+        <div className="col-4 d-flex justify-content-end align-items-center">
+          <form
+            className="d-flex"
+            role="search"
+            style={{ maxWidth: "400px", width: "100%" }}
+          >
+            <div className="input-group w-100">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button className="btn btn-danger" type="submit">
+                <i className="bi bi-search"></i>
+              </button>
+            </div>
           </form>
         </div>
       </div>

@@ -48,3 +48,65 @@ button.btn-warning:hover {
     font-size: 1rem;
     margin-top: 1rem;
 }
+
+/* Banner Styles */
+.banner {
+    padding: 0;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+
+/* Custom Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+}
+
+/* Carousel Caption */
+.carousel-caption h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+/* Make images responsive */
+.carousel-inner img {
+    max-height: 500px;
+    /* Set a max height for the images */
+    object-fit: cover;
+}
+
+.custom-btn-small {
+    padding: 0.25rem 0.5rem;
+    /* giảm padding */
+    font-size: 0.75rem;
+    /* giảm font icon */ }
+
+
+        .input-group .form-control {
+            height: 38px;
+            /* Chiều cao đồng bộ với button */
+            font-size: 1rem;
+            border-radius: 4px 0 0 4px;
+            /* Bo góc bên trái */
+            border: 1px solid #ccc;
+            outline: none;
+        }
+    
+        .input-group .btn-danger {
+            height: 38px;
+            /* Chiều cao đồng bộ với input */
+            border-radius: 0 4px 4px 0;
+            /* Bo góc bên phải */
+            padding: 0 15px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;   }

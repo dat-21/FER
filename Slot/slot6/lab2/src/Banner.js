@@ -6,7 +6,7 @@ import pizza4 from "./assets/pizza4.jpg";
 import pizza5 from "./assets/pizza5.jpg";
 
 // Import the external CSS
-import "./Banner.css";
+import "./Booking.css";
 
 function Banner() {
   return (
