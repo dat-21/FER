@@ -1,4 +1,3 @@
-// Quiz.js
 import React, { useContext, useState } from "react";
 import { QuizContext } from "./QuizProvider";
 
@@ -42,7 +41,7 @@ export default function Quiz({ questions }) {
         ? score + 1
         : score;
     return (
-      <div className="quiz-wrapper quiz-result">
+      <div className="quiz-taking-wrapper quiz-result">
         <div className="completed">Quiz Completed!</div>
         <div className="score">Your score: {finalScore}</div>
         <button
@@ -63,10 +62,10 @@ export default function Quiz({ questions }) {
   const q = questions[step];
 
   return (
-    <div className="quiz-wrapper">
-      <div className="question-number">Question {step + 1}</div>
-      <div className="question-text">{q.question}</div>
-      <ul className="options-list">
+    <div className="quiz-taking-wrapper">
+      <div className="quiz-number">Question {step + 1}</div>
+      <div className="quiz-question">{q.question}</div>
+      <div className="options-list">
         {q.answers.map((ans, idx) => (
           <label key={idx}>
             <input
@@ -79,7 +78,7 @@ export default function Quiz({ questions }) {
             <span>{ans}</span>
           </label>
         ))}
-      </ul>
+      </div>
       <div className="quiz-actions">
         <button
           className="quiz-btn quiz-btn-secondary"
