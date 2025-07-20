@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
+/*************  ✨ Windsurf Command ⭐  *************/
+/**
+ * Renders the header of the application, with links to the home, about, news, quiz, and contact pages.
+ *
+/*******  4debf81a-8ec2-48af-853e-a9af79ccc62b  *******/
 function Header() {
   return (
     <Navbar bg="light" expand="lg">

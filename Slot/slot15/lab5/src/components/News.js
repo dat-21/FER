@@ -8,9 +8,12 @@ function News() {
     <div className="news-wrapper">
       <h2 className="news-title">News Category</h2>
       <Row>
-        {newsList.map((news) => (
+        {newsList.map((news, idx) => (
           <Col md={3} key={news.id} className="mb-4">
-            <Card className="news-card">
+            <Card
+              className="news-card animated"
+              style={{ animationDelay: `${idx * 80}ms` }}
+            >
               <Card.Img variant="top" src={news.images} className="news-img" />
               <Card.Body className="news-card-body">
                 <Card.Title className="news-card-title">

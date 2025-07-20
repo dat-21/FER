@@ -32,14 +32,13 @@ function App() {
       {/* Truyền prop "people" cho AllAreTeenagers */}
       <AllAreTeenagers people={obj} />
 
+      <GroupByOccupation people={obj} />
 
-      <GroupByOccupation people={obj}/>
+      <OldestAndYoungest people={obj} />
 
-      <OldestAndYoungest people={obj}/>
+      <AverageAgeByOccupation people={obj} />
 
-      <AverageAgeByOccupation people={obj}/>
-
-      <SortByOccupationAndAge people={obj}/>
+      <SortByOccupationAndAge people={obj} />
     </div>
   );
 }

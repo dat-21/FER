@@ -10,6 +10,21 @@
 
 /* GlobalStyles.css */
 
+/* Animation cho card khi xuất hiện */
+.animated {
+    opacity: 0;
+    transform: translateY(30px) scale(0.97);
+    animation: fadeInUp 0.6s cubic-bezier(.32, 1.45, .3, 1) forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Layout và style News */
 .news-wrapper {
     padding: 15px;
 }
@@ -19,19 +34,34 @@
     margin: 15px 10px;
 }
 
+/* Card style + Animation hover */
 .news-card {
     min-height: 350px;
     max-height: 550px;
     height: 500px;
     display: flex;
     flex-direction: column;
+    transition: box-shadow 0.22s, transform 0.22s;
+    box-shadow: 0 2px 16px rgba(30, 40, 90, 0.08);
+    border: none;
+    background: #fff;
 }
 
+.news-card:hover {
+    box-shadow: 0 8px 38px rgba(37, 183, 119, 0.14), 0 1.5px 6px rgba(30, 40, 90, 0.10);
+    transform: translateY(-5px) scale(1.025) rotate(-1.2deg);
+    z-index: 2;
+    border: 1.5px solid #50e27a30;
+}
+
+/* Ảnh bên trong card: KHÔNG hover/animation, chỉ bo góc + crop đẹp */
 .news-img {
     object-fit: cover;
     height: 200px;
+    border-radius: 14px;
 }
 
+/* Card body giữ layout */
 .news-card-body {
     flex: 1;
     display: flex;
@@ -39,6 +69,7 @@
     justify-content: flex-start;
 }
 
+/* Tiêu đề card */
 .news-card-title {
     font-size: 16px;
     margin-bottom: 8px;
@@ -47,9 +78,10 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    min-height:95px;
+    min-height: 95px;
 }
 
+/* Nội dung card */
 .news-card-text {
     font-size: 14px;
     overflow: hidden;
@@ -58,4 +90,73 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     min-height: 60px;
+}
+
+/* Navbar style */
+.custom-navbar {
+    background: #fff !important;
+    border-bottom: 1px solid #efefef;
+    box-shadow: 0 2px 8px rgba(40, 50, 70, 0.03);
+    min-height: 60px;
+}
+
+.navbar-brand-custom {
+    font-size: 2.2rem;
+    /* To hơn, vừa phải, responsive tốt */
+    font-weight: bold;
+    color: #d32f2f !important;
+    letter-spacing: 1px;
+    border-bottom: 2.5px solid #d32f2f;
+    padding-bottom: 2px;
+    margin-right: 30px;
+    transition: color 0.18s, border-bottom 0.18s;
+    line-height: 1.2;
+}
+.navbar-brand-custom:hover,
+.navbar-brand-custom:focus {
+    color: #b71c1c !important;
+    border-bottom: 2.5px solid #b71c1c;
+    background: none; }
+.navbar-nav-custom .nav-link-custom {
+    font-size: 1rem;
+    margin-right: 10px;
+    color: #343a40 !important;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.18s, border-bottom 0.18s;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-nav-custom .nav-link-custom:hover,
+.navbar-nav-custom .nav-link-custom:focus {
+    color: #198754 !important;
+    /* Xanh lá cây Bootstrap */
+    border-bottom: 2px solid #198754;
+    background: none;
+}
+
+.navbar-nav-custom .nav-link-custom.active {
+    color: #d32f2f !important;
+    /* Đỏ khi active */
+    border-bottom: 2px solid #d32f2f;
+}
+
+.nav-link-custom {
+    transition: background 0.25s, color 0.18s, border-bottom 0.18s;
+    position: relative;
+    color: #343a40 !important;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link-custom.nav-link-hover,
+.nav-link-custom:hover {
+    background: #e7fbe9;
+    color: #198754 !important;
+    border-bottom: 2px solid #198754;
+}
+
+.nav-link-custom.active {
+    color: #d32f2f !important;
+    border-bottom: 2px solid #d32f2f;
 }

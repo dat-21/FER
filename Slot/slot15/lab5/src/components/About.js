@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-
+import "./PageDesign.css";
 function About() {
   return (
     <Container className="about-page mt-5">
